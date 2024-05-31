@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dueoay_report" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d71d1056-e4a7-4e4a-8129-920ff7ce3b71">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<image>
+				<reportElement x="170" y="10" width="180" height="60" uuid="e747c171-7c5b-41b7-b617-ea1a382c13ae"/>
+				<imageExpression><![CDATA["smlogo1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="90" width="109" height="15" uuid="2a09fd93-0476-41dc-b1d5-e8d12413dbed"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[41/165, Nikaweratiya]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="15" width="68" height="15" uuid="9db45e1f-d6f1-4440-8e13-7ff2cee95360"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[0371562342]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="47" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sincreport" pageWidth="204" pageHeight="324" columnWidth="182" leftMargin="11" rightMargin="11" topMargin="11" bottomMargin="11" uuid="825c5df3-0fbc-4ed2-9051-23597305ad11">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="name" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="72" splitType="Stretch">
+			<image>
+				<reportElement x="20" y="0" width="160" height="50" uuid="ef1d6d20-3958-4211-ac65-3d9855922225"/>
+				<imageExpression><![CDATA["C:/Users/Asus/Documents/NetBeansProjects/english_academy/src/resources/smlogo1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="40" width="180" height="20" uuid="51d271fe-ebb4-41b4-983e-50f6650cb71f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[41/165, Nikaweratiya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="180" height="20" uuid="1f14ccf7-dace-4b46-8496-2cb67bb0718d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[0371562342]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="180" height="40" forecolor="#5BA0F5" uuid="da406904-a76e-4d1b-a4b8-56f9466e8bd4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Identity Card]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="122">
+			<staticText>
+				<reportElement x="0" y="0" width="180" height="20" uuid="5e182b9d-f30f-4d4c-a52d-ffff92bd02ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NAME]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="2" y="10" width="180" height="30" uuid="0e276c0d-4c04-4438-87ab-038664011d0c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="45" width="184" height="20" uuid="e8e00582-d73b-4c8e-8928-d86ee9a364aa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[SIN]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="30" y="70" width="141" height="30" uuid="1146dd2a-8736-4c9d-b7f8-69a0a1f0a141"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="2of7" drawText="true" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{id}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="-1" y="13" width="184" height="17" forecolor="#F7100C" uuid="33c5d675-2ff9-402a-af67-9185a14275b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[RECC BY SUNETH GURUGE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="184" height="13" forecolor="#6058F5" uuid="e8734ef1-b5e5-4293-9419-a40c6aca9377"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Good Luck For Your Future !]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
